@@ -11,12 +11,12 @@ import ThemeProvider from "./store/theme-context";
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/rest-countries/",
     element: <Main />,
     children: [
-      { path: "/", element: <CountryList />, loader: countryLoader },
+      { path: "/rest-countries/", element: <CountryList />, loader: countryLoader },
       {
-        path: "/name/:country",
+        path: "/rest-countries/name/:country",
         element: <CountryDetails />,
         loader: countryDetailLoader,
         id: "country-detail",
