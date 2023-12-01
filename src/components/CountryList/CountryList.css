@@ -1,0 +1,144 @@
+.grid {
+    display: grid;
+    width: 92%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-inline: 7rem;
+    justify-content: space-between;
+  }
+  
+  .flag-card {
+    width: 250px;
+    height: 340px;
+    margin-bottom: 2rem;
+    border-radius: 0.2rem;
+    box-shadow: 2px 2px 16px 2px rgba(0, 0, 0, 0.3);
+    text-align: left;
+  }
+  
+  .flag-card > img {
+    width: 100%;
+    height: 45%;
+    border-top-right-radius: 0.2rem;
+    border-top-left-radius: 0.2rem;
+  }
+  
+  .country-detail {
+    margin-inline-start: 2rem;
+  }
+  
+  .country-detail > h2 {
+    font-size: 18px;
+  }
+  
+  .country-detail > p {
+    font-size: 14px;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 7rem;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  }
+  
+  header > img {
+    object-fit: contain;
+    cursor: pointer;
+  }
+  
+  .icon-button {
+    border: none;
+    background-color: transparent;
+    font-size: 1.3rem;
+    cursor: pointer;
+  }
+  
+  input[type="text"] {
+    width: 23rem;
+    height: 2.7rem;
+    font-size: 1rem;
+    padding-inline-start: 1rem;
+    border: none;
+    outline: none;
+    box-shadow: 2px 2px 12px 4px rgba(0, 0, 0, 0.3);
+  }
+
+  .search-button {
+    height: 3rem;
+    width: 3rem;
+    border: none;
+    background-color: black;
+    margin-top: 2rem;
+    font-size: 2rem;
+    color: white;
+  }
+
+  .search {
+    width: 2rem;
+    margin-left: 1rem;
+  }
+  
+  .select-container {
+    margin-inline: 7rem;
+    margin-block-end: 2rem;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .select-container > div {
+    display: flex;
+    align-items: center;
+  }
+  
+  .region {
+    border: none;
+    outline: none;
+    width: 10rem;
+    cursor: pointer;
+    box-shadow: 2px 2px 8px 2px rgba(0, 0, 0, 0.3);
+  }
+  
+  a {
+    color: black;
+  }
+  
+  @media screen and (max-width: 400px) {
+    header {
+      padding-inline: 1rem;
+      height: 5rem;
+      display: flex;
+      align-items: center;
+    }
+  
+    .icon-button {
+      font-size: 1rem;
+    }
+  
+    header h1 {
+      font-size: 1rem;
+    }
+  
+    .select-container {
+      width: 80%;
+      height: 7rem;
+      margin-inline: 1rem;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    input[type="text"] {
+      width: 100%;
+    }
+  
+    .region {
+      height: 2rem;
+    }
+  
+    .grid {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-inline: 0;
+    }
+  }
