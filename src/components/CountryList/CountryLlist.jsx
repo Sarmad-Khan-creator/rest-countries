@@ -118,7 +118,7 @@ const CountryList = () => {
               {loadedData.map((country, index) => (
                 <Link
                   key={index}
-                  to={`/name/${country.name.common}`}
+                  to={`name/${country.name.common}`}
                   style={{ textDecoration: "none" }}
                 >
                   <FalgCard

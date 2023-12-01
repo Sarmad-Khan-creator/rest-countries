@@ -14,9 +14,9 @@ const router = createBrowserRouter([
     path: "/rest-countries/",
     element: <Main />,
     children: [
-      { path: "/rest-countries/", element: <CountryList />, loader: countryLoader },
+      { index: true, element: <CountryList />, loader: countryLoader },
       {
-        path: "/rest-countries/name/:country",
+        path: "name/:country",
         element: <CountryDetails />,
         loader: countryDetailLoader,
         id: "country-detail",
